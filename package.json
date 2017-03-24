@@ -1,6 +1,8 @@
 {
   "name": "convertloop",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "description": "NodeJS wrapper for convertloop API",
+  "author": "Juan Gomez <j.gomez267@gmail.com>",
   "private": false,
   "main": "lib",
   "repository": {

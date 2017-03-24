@@ -4,10 +4,6 @@ A Node client of the ConvertLoop REST API. You can sign up for a ConvertLoop acc
 
 ## Installation
 
-### Ruby
-
-1\. Install the gem
-
 ```
 $ npm install convertloop
 ```
@@ -18,8 +14,8 @@ $ npm install convertloop
 const Convertloop = require('convertloop-node')
 
 const convertloop = new Convertloop({
-  app_id: '0b480968',
-  api_key: 'udQeeUujEk8i7xiE9ZaiDij8'
+  app_id: 'your_app_Id',
+  api_key: 'your_api_key'
 })
 ```
 You are now ready to start calling the API methods!
