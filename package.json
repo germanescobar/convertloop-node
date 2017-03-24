@@ -1,0 +1,22 @@
+{
+  "name": "convertloop-node",
+  "version": "0.0.1",
+  "private": false,
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/juan267/convertloop-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juan267/convertloop-node/issues"
+  },
+  "homepage": "https://github.com/juan267/convertloop-node",
+  "keywords": [
+    "convertloop,",
+    "api-client"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "superagent": "^3.5.2"
+  }
+}
