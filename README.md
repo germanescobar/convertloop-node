@@ -36,15 +36,15 @@ convertloop.people.create_or_update({
 })
 ```
 
-Any key different to `pid`, `user_id`, `email`, `first_seen_at`, `last_seen_at`, `add_tags`, and `remove_tags` will be treated as a **custom attribute** of the person.
+Any key different to `pid`, `user_id`, `email`, `first_seen_at`, `last_seen_at`, `add_to_segments`, and `remove_from_segments` will be treated as a **custom attribute** of the person.
 
-You can add or remove tags using the `add_tags` and `remove_tags` keys:
+You can add or remove people from a segment ussing the  `add_to_segments` and `remove_from_segments` keys:
 
 ```javascript
 convertloop.people.create_or_update({
   email: "juan.gomez@convertloop.co",
-  add_tags: ['Learn Something'],
-  remove_tags: ['Lead']
+  add_to_segments: ['Learn Something'],
+  remove_from_segments: ['Lead']
 }, function(err, data) {
   console.log(err, data.body)
 })
@@ -67,4 +67,4 @@ convertloop.event_logs.event_logs.send({
 })
 ```
 
-If you don't specify the `ocurred_at` key, the current time will be used. You can use the `person` key to add **custom attributes** and **tags** to that person.
+If you don't specify the `ocurred_at` key, the current time will be used. You can use the `person` key to add **custom attributes** to that person, or add or remove that person to/from **segments**.
